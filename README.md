@@ -96,13 +96,13 @@ pip install -r requirements.txt
 ```
 ### Create .env File
 Create a .env file in the project root with:
-SECRET_KEY=your_secret_key
-ALGORITHM=HS256
-ACCESS_TOKEN_EXPIRE_MINUTES=60
-EMAIL_USER=yourapp@gmail.com
-EMAIL_PASS=your_app_password
-WEATHER_API_KEY=your_weather_api_key
-NEWS_API_KEY=your_news_api_key
+SECRET_KEY=your_secret_key  
+ALGORITHM=HS256  
+ACCESS_TOKEN_EXPIRE_MINUTES=60  
+EMAIL_USER=yourapp@gmail.com  
+EMAIL_PASS=your_app_password  
+WEATHER_API_KEY=your_weather_api_key  
+NEWS_API_KEY=your_news_api_key  
 
 
 Replace placeholders with actual values (e.g., Gmail App Password, API keys from OpenWeatherMap, NewsAPI).
@@ -146,21 +146,21 @@ bashpip install fastapi==0.111.0 uvicorn sqlalchemy passlib[argon2] python-jose 
 |                   | GET    | `/ping`                | Health check            |
 
 ### Authentication & Authorization
-Register at /auth/register.
-Login at /auth/login to get an access_token.
-In Swagger UI, click Authorize and paste Bearer <token>.
-Access protected endpoints.
+Register at /auth/register.  
+Login at /auth/login to get an access_token.  
+In Swagger UI, click Authorize and paste Bearer <token>.  
+Access protected endpoints.  
 
 ### Modules Overview
 
-*🔐 Auth System: JWT-based login/register with Argon2 hashing and token expiration.
-*💰 Expense Analytics: Add/view expenses, view summaries, and monthly trends.
-*🌦 Weather + 📰 News: Fetch real-time data using external APIs.
-*💬 Sentiment: Analyze text tone with TextBlob.
-*🔔 Notifications: Manage reminders and send email alerts.
-*📅 Calendar: Weekly expense summary view.
-*💌 Contact: Submit feedback via API.
-*👩‍💼 Admin: Manage users and feedback messages.
+*🔐 Auth System: JWT-based login/register with Argon2 hashing and token expiration.  
+*💰 Expense Analytics: Add/view expenses, view summaries, and monthly trends.  
+*🌦 Weather + 📰 News: Fetch real-time data using external APIs.  
+*💬 Sentiment: Analyze text tone with TextBlob.  
+*🔔 Notifications: Manage reminders and send email alerts.  
+*📅 Calendar: Weekly expense summary view.  
+*💌 Contact: Submit feedback via API.  
+*👩‍💼 Admin: Manage users and feedback messages.  
 
 ### Run the Project
 ```
@@ -171,14 +171,14 @@ python -m uvicorn app.main:app --reload
 ```
 ### Open your browser:
 
-👉 **http://127.0.0.1:8000/docs (Swagger UI)  
-👉 **http://127.0.0.1:8000/redoc (ReDoc UI)
+👉 http://127.0.0.1:8000/docs (Swagger UI)  
+👉 http://127.0.0.1:8000/redoc (ReDoc UI)
 
 ### Test Your APIs
 
-✅ **Swagger UI: Interactive API docs at /docs.  
-⚡ **Thunder Client (VS Code): Simple local testing.  
-🧰 **Postman: Set Authorization: Bearer <token> for secured routes.
+✅ Swagger UI: Interactive API docs at /docs.  
+⚡ Thunder Client (VS Code): Simple local testing.  
+🧰 Postman: Set Authorization: Bearer <token> for secured routes.
 
 Author
 Ainy Gupta
