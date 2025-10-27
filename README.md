@@ -46,30 +46,30 @@ An advanced **FastAPI-based personal productivity and analytics system**, combin
 ---
 smart_dashboard/  
 │
-├── app/                        # Core application directory  
-│   ├── main.py                 # Application entry point  
-│   ├── database.py             # Database configuration and setup  
-│   ├── models.py               # SQLAlchemy models and schemas  
-│   ├── utils/                  # Utility modules  
-│   │   ├── jwt_handler.py      # JWT authentication and token handling  
-│   │   ├── dependencies.py     # Shared dependencies and helpers  
-│   ├── routes/                 # API route definitions  
-│   │   ├── auth_routes.py      # Authentication endpoints  
-│   │   ├── expense.py          # Expense management endpoints  
-│   │   ├── weather.py          # Weather data endpoints  
-│   │   ├── news.py             # News feed endpoints  
-│   │   ├── sentiment.py        # Sentiment analysis endpoints  
-│   ├── routers/                # Additional feature routers  
-│   │   ├── notifications.py    # Notification endpoints  
-│   │   ├── calendar_api.py     # Calendar integration endpoints  
-│   │   ├── contact.py          # Contact management endpoints  
-│   │   ├── admin.py            # Admin-specific endpoints  
-│   └── init.py             # Package initializer  
+├── app/                            
+│   ├── main.py                   
+│   ├── database.py               
+│   ├── models.py                 
+│   ├── utils/                    
+│   │   ├── jwt_handler.py       
+│   │   ├── dependencies.py        
+│   ├── routes/                   
+│   │   ├── auth_routes.py        
+│   │   ├── expense.py           
+│   │   ├── weather.py          
+│   │   ├── news.py               
+│   │   ├── sentiment.py         
+│   ├── routers/                  
+│   │   ├── notifications.py      
+│   │   ├── calendar_api.py       
+│   │   ├── contact.py           
+│   │   ├── admin.py              
+│   └── init.py           
 │
-├── dashboard.db                # SQLite database file  
-├── .env                        # Environment variables  
-├── requirements.txt            # Project dependencies  
-└── README.md                   # Project documentation  
+├── dashboard.db                 
+├── .env                          
+├── requirements.txt            
+└── README.md                    
 
 
 ### 1️⃣ Clone the Repository
@@ -121,7 +121,7 @@ requests
 pandas  
 matplotlib  
 ### Install manually if needed:
-bashpip install fastapi==0.111.0 uvicorn sqlalchemy passlib[argon2] python-jose python-dotenv textblob apscheduler slowapi requests pandas matplotlib
+pip install fastapi==0.111.0 uvicorn sqlalchemy passlib[argon2] python-jose python-dotenv textblob apscheduler slowapi requests pandas matplotlib
 ### API Endpoints
 
 | Module            | Method | Endpoint               | Description             |
