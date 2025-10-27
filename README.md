@@ -171,14 +171,14 @@ python -m uvicorn app.main:app --reload
 ```
 ### Open your browser:
 
-*👉 http://127.0.0.1:8000/docs (Swagger UI)
-*👉 http://127.0.0.1:8000/redoc (ReDoc UI)
+👉 **http://127.0.0.1:8000/docs (Swagger UI)
+👉 **http://127.0.0.1:8000/redoc (ReDoc UI)
 
 ### Test Your APIs
 
-*✅ Swagger UI: Interactive API docs at /docs.
-*⚡ Thunder Client (VS Code): Simple local testing.
-*🧰 Postman: Set Authorization: Bearer <token> for secured routes.
+✅ **Swagger UI: Interactive API docs at /docs.
+⚡ **Thunder Client (VS Code): Simple local testing.
+🧰 **Postman: Set Authorization: Bearer <token> for secured routes.
 
 Author
 Ainy Gupta
