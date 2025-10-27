@@ -44,50 +44,50 @@ An advanced **FastAPI-based personal productivity and analytics system**, combin
 | **Deployment** | Render / Railway / Localhost |
 
 ---
-smart_dashboard/
+smart_dashboard/  
 │
-├── app/                        # Core application directory
-│   ├── main.py                 # Application entry point
-│   ├── database.py             # Database configuration and setup
-│   ├── models.py               # SQLAlchemy models and schemas
-│   ├── utils/                  # Utility modules
-│   │   ├── jwt_handler.py      # JWT authentication and token handling
-│   │   ├── dependencies.py     # Shared dependencies and helpers
-│   ├── routes/                 # API route definitions
-│   │   ├── auth_routes.py      # Authentication endpoints
-│   │   ├── expense.py          # Expense management endpoints
-│   │   ├── weather.py          # Weather data endpoints
-│   │   ├── news.py             # News feed endpoints
-│   │   ├── sentiment.py        # Sentiment analysis endpoints
-│   ├── routers/                # Additional feature routers
-│   │   ├── notifications.py    # Notification endpoints
-│   │   ├── calendar_api.py     # Calendar integration endpoints
-│   │   ├── contact.py          # Contact management endpoints
-│   │   ├── admin.py            # Admin-specific endpoints
-│   └── init.py             # Package initializer
+├── app/                        # Core application directory  
+│   ├── main.py                 # Application entry point  
+│   ├── database.py             # Database configuration and setup  
+│   ├── models.py               # SQLAlchemy models and schemas  
+│   ├── utils/                  # Utility modules  
+│   │   ├── jwt_handler.py      # JWT authentication and token handling  
+│   │   ├── dependencies.py     # Shared dependencies and helpers  
+│   ├── routes/                 # API route definitions  
+│   │   ├── auth_routes.py      # Authentication endpoints  
+│   │   ├── expense.py          # Expense management endpoints  
+│   │   ├── weather.py          # Weather data endpoints  
+│   │   ├── news.py             # News feed endpoints  
+│   │   ├── sentiment.py        # Sentiment analysis endpoints  
+│   ├── routers/                # Additional feature routers  
+│   │   ├── notifications.py    # Notification endpoints  
+│   │   ├── calendar_api.py     # Calendar integration endpoints  
+│   │   ├── contact.py          # Contact management endpoints  
+│   │   ├── admin.py            # Admin-specific endpoints  
+│   └── init.py             # Package initializer  
 │
-├── dashboard.db                # SQLite database file
-├── .env                        # Environment variables
-├── requirements.txt            # Project dependencies
-└── README.md                   # Project documentation
+├── dashboard.db                # SQLite database file  
+├── .env                        # Environment variables  
+├── requirements.txt            # Project dependencies  
+└── README.md                   # Project documentation  
 
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/ainy07/Smart-Personal-Dashboard-API.git
+git clone https://github.com/ainy07/Smart-Personal-Dashboard-API.git  
 cd Smart-Personal-Dashboard-API
 ```
 ```
 Windows:
 
-bashpython -m venv venv
+python -m venv venv  
 venv\Scripts\activate
 ```
 
 ```
 Mac/Linux:
 
-bashpython3 -m venv venv
+python3 -m venv venv  
 source venv/bin/activate
 ```
 ### Install Dependencies
@@ -108,18 +108,18 @@ NEWS_API_KEY=your_news_api_key
 Replace placeholders with actual values (e.g., Gmail App Password, API keys from OpenWeatherMap, NewsAPI).
 
 ### Requirements
-plaintextfastapi==0.111.0
-uvicorn
-sqlalchemy
-passlib[argon2]
-python-jose
-python-dotenv
-textblob
-apscheduler
-slowapi
-requests
-pandas
-matplotlib
+plaintextfastapi==0.111.0  
+uvicorn  
+sqlalchemy  
+passlib[argon2]  
+python-jose  
+python-dotenv  
+textblob  
+apscheduler  
+slowapi  
+requests  
+pandas  
+matplotlib  
 ### Install manually if needed:
 bashpip install fastapi==0.111.0 uvicorn sqlalchemy passlib[argon2] python-jose python-dotenv textblob apscheduler slowapi requests pandas matplotlib
 ### API Endpoints
@@ -153,14 +153,14 @@ Access protected endpoints.
 
 ### Modules Overview
 
-*🔐 Auth System: JWT-based login/register with Argon2 hashing and token expiration.  
-*💰 Expense Analytics: Add/view expenses, view summaries, and monthly trends.  
-*🌦 Weather + 📰 News: Fetch real-time data using external APIs.  
-*💬 Sentiment: Analyze text tone with TextBlob.  
-*🔔 Notifications: Manage reminders and send email alerts.  
-*📅 Calendar: Weekly expense summary view.  
-*💌 Contact: Submit feedback via API.  
-*👩‍💼 Admin: Manage users and feedback messages.  
+🔐 Auth System: JWT-based login/register with Argon2 hashing and token expiration.  
+💰 Expense Analytics: Add/view expenses, view summaries, and monthly trends.  
+🌦 Weather + 📰 News: Fetch real-time data using external APIs.  
+💬 Sentiment: Analyze text tone with TextBlob.  
+🔔 Notifications: Manage reminders and send email alerts.  
+📅 Calendar: Weekly expense summary view.  
+💌 Contact: Submit feedback via API.  
+👩‍💼 Admin: Manage users and feedback messages.  
 
 ### Run the Project
 ```
@@ -184,6 +184,6 @@ Author
 Ainy Gupta
 Python | FastAPI | Django | ML | Analytics
 
-📧 Email: ainygupta00@gmail.com
-🌐 GitHub: github.com/ainy07
+📧 Email: ainygupta00@gmail.com  
+🌐 GitHub: github.com/ainy07  
 💼 LinkedIn: www.linkedin.com/in/ainy-gupta-882917242
