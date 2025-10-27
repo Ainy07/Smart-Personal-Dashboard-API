@@ -153,14 +153,14 @@ Access protected endpoints.
 
 ### Modules Overview
 
-🔐 Auth System: JWT-based login/register with Argon2 hashing and token expiration.
-💰 Expense Analytics: Add/view expenses, view summaries, and monthly trends.
-🌦 Weather + 📰 News: Fetch real-time data using external APIs.
-💬 Sentiment: Analyze text tone with TextBlob.
-🔔 Notifications: Manage reminders and send email alerts.
-📅 Calendar: Weekly expense summary view.
-💌 Contact: Submit feedback via API.
-👩‍💼 Admin: Manage users and feedback messages.
+*🔐 Auth System: JWT-based login/register with Argon2 hashing and token expiration.
+*💰 Expense Analytics: Add/view expenses, view summaries, and monthly trends.
+*🌦 Weather + 📰 News: Fetch real-time data using external APIs.
+*💬 Sentiment: Analyze text tone with TextBlob.
+*🔔 Notifications: Manage reminders and send email alerts.
+*📅 Calendar: Weekly expense summary view.
+*💌 Contact: Submit feedback via API.
+*👩‍💼 Admin: Manage users and feedback messages.
 
 ### Run the Project
 ```
@@ -171,14 +171,14 @@ python -m uvicorn app.main:app --reload
 ```
 ### Open your browser:
 
-👉 http://127.0.0.1:8000/docs (Swagger UI)
-👉 http://127.0.0.1:8000/redoc (ReDoc UI)
+*👉 http://127.0.0.1:8000/docs (Swagger UI)
+*👉 http://127.0.0.1:8000/redoc (ReDoc UI)
 
 ### Test Your APIs
 
-✅ Swagger UI: Interactive API docs at /docs.
-⚡ Thunder Client (VS Code): Simple local testing.
-🧰 Postman: Set Authorization: Bearer <token> for secured routes.
+*✅ Swagger UI: Interactive API docs at /docs.
+*⚡ Thunder Client (VS Code): Simple local testing.
+*🧰 Postman: Set Authorization: Bearer <token> for secured routes.
 
 Author
 Ainy Gupta
