@@ -16,11 +16,11 @@ def send_email_notification(to_email: str, subject: str, body: str):
     try:
         msg = MIMEText(body)
         msg["Subject"] = subject
-        msg["From"] = "ainygupta00@gmail.com"
+        msg["From"] = "your email"
         msg["To"] = to_email
 
         with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
-            server.login("ainygupta00@gmail.com", "fnrc dcdk sgry mpzj") 
+            server.login("your email", "your email key") 
             server.send_message(msg)
 
         print(f"📧 Email sent to {to_email}")
